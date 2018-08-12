@@ -13,7 +13,7 @@ It	should	be	single	page	applicaton
 ## Sign up page:
 Should	has	"Sign	up"	bu.on	and	3	fields:	email,	password	and	password
 confirm.
-When	user	presses	"Sign	up"	button,	app	should	validate	email	field.	As	well	as
+When	user	presses	"Sign up"	button,	app	should	validate	email	field.	As	well	as
 password	and	password	confirm	should	be	iden=cal.	Error	message	should	be
 shown	on	the	top	of	the	page,	if	validaton	failed.
 If	email	and	password	are	corrected,	auth	info	should	be	stored	in	the	local
@@ -21,7 +21,7 @@ storage.	Password	should	be	stored	as	hash.
 
 ## Log in page
 Has	Email	and	password	fields.
-ANer	pressing	"Log	in"	bu.on,	auth	info	checked	and	user	authorized.
+ANer	pressing	"Log	in"	button,	auth	info	checked	and	user	authorized.
 
 
 ## Search page:
