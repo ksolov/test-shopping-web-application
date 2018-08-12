@@ -1,0 +1,61 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["airbnb-base/legacy", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "linebreak-style": 0,
+    "no-mixed-operators": [ "warn",
+      {
+        "groups": [
+          ["+", "-", "*", "/", "%", "**"],
+          ["&", "|", "^", "~", "<<", ">>", ">>>"],
+          ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+          ["&&", "||"],
+          ["in", "instanceof"]
+        ],
+        "allowSamePrecedence": true
+      }
+    ],
+    "react/prop-types":  [1, { "skipUndeclared": true }],
+    "no-bitwise": ["error", { "allow": ["^"] }],
+    "no-nested-ternary": 0,
+    "no-param-reassign": ["error", { "props": false }],
+    "no-unused-expressions": 0,
+    "no-unused-vars": ["warn", "all"],
+    "max-len": ["error", { "code": 120, "ignoreUrls": true, "ignoreStrings": true, "ignoreRegExpLiterals": true }],
+    "comma-dangle": ["error", "never"],
+    "no-plusplus": [ "error", { "allowForLoopAfterthoughts": true } ],
+    "global-require": 0,
+    "class-methods-use-this": ["error", { "exceptMethods": ["render"] }],
+    "prefer-promise-reject-errors": 0,
+    "no-underscore-dangle": ["error", { "allow": ["__PRELOADED_STATE__"] }],
+    "no-shadow": ["error", { "hoist": "never", "allow": ["cn"] }]
+  }
+}

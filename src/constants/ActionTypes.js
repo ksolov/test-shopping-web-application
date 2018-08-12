@@ -1,0 +1,9 @@
+export const SOME_ACTION_TYPE = 'SOME_ACTION_TYPE';
+
+export const AUTH_SUCCESS = 'AUTH_SUCCESS';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAILURE = 'LOGIN_FAILURE';
+export const LOGIN_CLEAR = 'LOGIN_CLEAR';
+export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
+
+export const USER_SUCCESS = 'USER_SUCCESS';

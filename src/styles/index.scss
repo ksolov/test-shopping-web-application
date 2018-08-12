@@ -1,0 +1,9 @@
+@import 'reset';
+@import 'fonts';
+
+.auth-jumbotron {
+  width: 500px;
+  padding: 20px;
+
+  @include vertical-middle;
+}
