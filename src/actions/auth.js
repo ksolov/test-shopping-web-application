@@ -1,6 +1,7 @@
 import * as types from '../constants/ActionTypes';
 import md5 from 'md5';
 import Utils from '../utils/Utils';
+import { setUser } from './user';
 
 const logoutAction = () => ({
   type: types.LOGOUT_SUCCESS
@@ -17,11 +18,6 @@ const loginErrorAction = () => ({
 
 export const loginClear = () => ({
   type: types.LOGIN_CLEAR
-});
-
-export const setUser = (user) => ({
-  type: types.USER_SUCCESS,
-  user
 });
 
 const registrationAction = () => ({

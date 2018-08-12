@@ -6,11 +6,24 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-  case types.USER_SUCCESS:
+  case types.GET_PHONES_SUCCESS:
     return {
       ...state,
+      isFetching: false,
+      phones: action.data
+    };
+  case types.GET_PHONES_REQUEST:
+    return {
+      ...state,
+      isFetching: true
+    };
+  case types.GET_PHONES_FAILURE:
+    return {
+      ...state,
+      isFetching: false,
+      error: action.error
     };
   default:
     return state;
-}
+  }
 };

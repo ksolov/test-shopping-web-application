@@ -7,3 +7,10 @@ export const LOGIN_CLEAR = 'LOGIN_CLEAR';
 export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
 
 export const USER_SUCCESS = 'USER_SUCCESS';
+
+export const GET_PHONES_REQUEST = 'GET_PHONES_REQUEST';
+export const GET_PHONES_SUCCESS = 'GET_PHONES_SUCCESS';
+export const GET_PHONES_FAILURE = 'GET_PHONES_FAILURE';
+
+export const ADD_PHONE = 'ADD_PHONE';
+

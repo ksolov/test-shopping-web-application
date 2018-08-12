@@ -1,5 +1,6 @@
 /* eslint import/no-extraneous-dependencies: 0, global-require: 0 */
 const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const getPostcssPlugins = require('./postcss_plugins.js');
 const helpers = require('./helpers');
@@ -92,7 +93,15 @@ const webpackConfig = function (options) {
         }
       ]
     },
-    plugins: []
+    plugins: [
+      new CopyWebpackPlugin([
+        {
+          from: helpers.root('src', 'static', 'img'),
+          to: helpers.root('build', 'assets', 'img'),
+          flatten: true
+        }
+      ])
+    ]
   };
 };
 
