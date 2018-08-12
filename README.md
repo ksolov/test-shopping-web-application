@@ -14,8 +14,8 @@ It	should	be	single	page	applicaton
 Should	has	"Sign	up"	bu.on	and	3	fields:	email,	password	and	password
 confirm.
 When	user	presses	"Sign up"	button,	app	should	validate	email	field.	As	well	as
-password	and	password	confirm	should	be	iden=cal.	Error	message	should	be
-shown	on	the	top	of	the	page,	if	validaton	failed.
+password	and	password	confirm	should	be	identical.	Error	message	should	be
+shown	on	the	top	of	the	page,	if	validation	failed.
 If	email	and	password	are	corrected,	auth	info	should	be	stored	in	the	local
 storage.	Password	should	be	stored	as	hash.
 
@@ -29,7 +29,7 @@ Allowed	for	authorized	users	only.
 Search	page	should	has	item's	filter	and	item's	list.	When	any	filter	is	changed,
 item's	list	reloaded	according	enabled	filters.	Page	shouldn't	be	reloaded,	just
 item's	list.	User	can	add	item	in	the	his	cart.
-Items	list	should	be	as	sta=c	json	file.
+Items	list	should	be	as	static	json	file.
 
 ### Item's	fields
 • Id
